@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <title>Зеленое Дерево</title>
+</head>
+
+<body>
+    <form>
+        <h1 title="Форма регистрации на сайте">Регистрация</h1>
+        <input id="Name" type="text" alt="Name" placeholder="Имя" required />
+        <input id="Email" type="text" alt="Email" placeholder="Адрес электронной почты" required />
+        <input id="Phone" type="text" alt="Phone" placeholder="Номер телефона" required />
+        <input id="button" type="submit" style="height: auto" onclick="SendMessage()" /> </form>
+    <script>
+        function SendMessage() {
+            const inputName = document.getElementById("Name");
+            const inputEmail = document.getElementById("Email");
+            const inputPhone = document.getElementById("Phone");
+            if (inputName.value == "" && inputEmail.value == "") {
+                inputName.style.borderColor = "red";
+                inputEmail.style.borderColor = "red";
+            }
+            if (inputName.value == "" && inputPhone.value == "") {
+                inputName.style.borderColor = "red";
+                inputPhone.style.borderColor = "red";
+            }
+            if (inputEmail.value == "" && inputPhone.value == "") {
+                inputEmail.style.borderColor = "red";
+                inputPhone.style.borderColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

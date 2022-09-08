@@ -1,0 +1,56 @@
+* {
+    margin: 0 auto;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+
+/*registration=============================*/
+
+registration h1 {
+    text-align: center;
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #5200a5;
+}
+
+form {
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px/20px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+#button {
+    cursor: pointer;
+    padding: 10px 30px;
+    height: 50px;
+    background: #9cdf4f;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+}
+
+#button:hover {
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}
